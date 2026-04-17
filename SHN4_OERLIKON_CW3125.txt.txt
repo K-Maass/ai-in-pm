@@ -1,0 +1,525 @@
+################################################################################
+# SAP S/4HANA EXPORT - CROSS-MODULE DUMP
+# SITE: ZURICH-OERLIKON (SECTOR 4)
+# COST CENTER: 4402-B (SORTING LINE 3)
+# PERIOD: WEEK 31 (28.07.2025 - 01.08.2025)
+# EXPORT DATE: 01.08.2025 23:59
+# USER: SYSTEM_ADMIN_04
+# SECURITY: INTERNAL ONLY / DO NOT DISTRIBUTE
+# NOTE: RAW OPERATOR LOGBOOK EXTRACT - UNFILTERED
+################################################################################
+
+================================================================================
+MONDAY, 28.07.2025 (Day 1)
+================================================================================
+
+[05:40:00] [4031] [MANUAL_LOG]
+Badge reader at the Sector 4 entrance is blinking red. It won't let me or 8980 clock in. Had to get the night security guard to manually open the turnstile. 
+
+[05:42:00] [1691] [MANUAL_LOG]
+Funny how the IT system always breaks when we try to clock IN, but never when we try to clock OUT! 🤣 I'll let HR know to adjust our timesheets later. 
+
+[05:45:00] [4786] [SHIFT_START] 
+Starting morning shift. Four days of production this week. Friday is August 1st, so the plant is closed. I expect maximum focus so we can all enjoy the long weekend without leaving a mess behind. Bühler SORTEX is booting up.
+
+[05:55:00] [1691] [MANUAL_LOG]
+Did anyone watch the Euro final in Basel yesterday? England vs. Spain. What a match! I can't believe it went all the way to a penalty shootout. England defending the title was incredible. The atmosphere in the city was crazy. 
+
+[06:02:15] [SYSTEM_KERNEL] BOOT SEQUENCE INITIATED
+> Unit: Bühler SORTEX Optical Sorter
+> Firmware: v4.1.2 
+> Checking Peripherals...
+> Camera 1 (Top): OK
+> Camera 2 (Side-A): OK
+> Camera 3 (Side-B): OK
+> Illumination Array: OK
+> Belt Drive: OK 
+[SYSTEM_KERNEL] SYSTEM READY. WAITING FOR BATCH.
+
+[06:10:00] [8980] [MANUAL_LOG]
+1691, yes! I was at the public viewing near the stadium. The tension during the penalties was unbelievable. Half the crowd couldn't even look. Anyway, I'm checking the hopper, looking good.
+
+[06:15:00] [4786] [MANUAL_LOG]
+Hold everything! Before we start the feed, I almost forgot. Today marks exactly 35 years since 7290 started working at AlpenHarvest! 35 years! 
+
+[06:18:00] [8980] [MANUAL_LOG]
+Happy work-anniversary to 7290! She brought three massive, freshly baked butter Zopf breads for the morning team. She just told me that when she started in 1990, they didn't even have optical sorters. They had to pick out the bad peas by hand while listening to cassette tapes. 
+
+[06:20:00] [8461] [LOGISTICS_LOG]
+Charge_ID 88 arriving from Gate A. TransAlp. Euro-Pool pallets. Forklift is feeding it into the hopper now.
+
+[06:35:00] [4031] [MANUAL_LOG]
+Belt speed set to 1.5 m/s. Everything sounds normal. Enjoy the Zopf, guys, I'm watching the screen.
+
+[07:05:00] [4786] [MANUAL_LOG]
+Line 3 is running, but the yield monitor is flashing yellow. Total yield is at 84%. That's way below our 97% baseline. 
+
+[07:15:00] [1691] [MANUAL_LOG]
+4786, I'm watching the belt from the catwalk. The good peas are mostly passing, but on the far left side of the belt (Zone 1), the ejector is going crazy. It's just rapid-firing and blowing perfectly good, green peas into the reject bin.
+
+[07:25:00] [4786] [MANUAL_LOG]
+I see it. The left side is a warzone. I am recalibrating the color thresholds for Zone 1 via the UI. Dropping the green sensitivity slightly to see if it relaxes.
+
+[07:45:00] [8461] [LOGISTICS_LOG]
+Charge_ID 89 arriving from Gate B. SpeedyLogistics. 
+
+[07:55:00] [4786] [MANUAL_LOG]
+Recalibration didn't work. The SORTEX is still rejecting about 40% of the material on the left side of the belt. The right side and middle are perfectly fine. 
+
+[08:15:00] [3898] [QC_LOG]
+We are wasting prime material here. I just checked the reject bin. It's full of A-grade Royal Garden peas. If we keep this up, we'll lose tons of product before the holiday. 
+
+[08:40:00] [4031] [MANUAL_LOG]
+The reject bin is already 80% full. Usually, this takes four hours. I am swapping it out for an empty one.
+
+[09:10:00] [5402] [MANUAL_LOG]
+Hey guys, maybe the Earth's magnetic field shifted over the weekend and is interfering with the left sensor array? I read an article about solar flares affecting optical equipment.
+
+[09:15:00] [4786] [MANUAL_LOG]
+5402, go count the empty pallets in Sector 2. Do not come back until you are done.
+
+[09:45:00] [2743] [TECH_LOG]
+I am looking at the machine logs remotely. The software is definitely triggering the ejector on Zone 1. It's not a ghost-fire. The camera is seeing *something* it doesn't like, or the software threshold is corrupted.
+
+[10:20:00] [8461] [LOGISTICS_LOG]
+Bringing more empty bins to Line 3. You guys are chewing through them.
+
+[10:30:00] [7290] [MANUAL_LOG]
+Don't worry about the machine, kids. Machines have bad Mondays too. Have another slice of Zopf. I am putting a chair next to the reject bin and I will start hand-sorting the good peas out of the bad ones until Maintenance figures it out. I haven't done this since 1996! This is nostalgic.
+
+[11:15:00] [4786] [MANUAL_LOG]
+Yield is still terrible. Left side rejecting non-stop. I have adjusted every threshold in the UI. Color, size, shape, density. Nothing changes the behavior of Zone 1. I am logging a priority ticket for Maintenance. 
+
+[11:45:00] [3174] [MAINTENANCE_TICKET]
+Ticket received. If the software settings aren't fixing it, it has to be a mechanical issue with the pneumatic manifold on the left side. The valves might be stuck open or the pressure regulator for Zone 1 is blown. I will come down during the shift handover.
+
+[12:10:00] [3898] [QC_LOG]
+I'm sampling the good output. The quality is flawless. But the volume is terrible. 
+
+[12:45:00] [1691] [MANUAL_LOG]
+We have 6 full bins of mixed rejects now. We need to help 7290 start hand-sorting them or they will go to animal feed. 
+
+[13:20:00] [4031] [MANUAL_LOG]
+I set up a table near the packaging line. 8980 and I are manually sorting the bins to rescue the good peas. This is extremely slow. 7290 is beating us both combined.
+
+[14:00:00] [4786] [SHIFT_HANDOVER]
+Handing over to afternoon shift. Line 3 is limping. Yield is 83%. We are bleeding good peas. 7290 is still sitting there hand-sorting, humming Swiss folk songs. Maintenance is taking over. Good luck, Katya.
+
+[14:10:00] [7662] [SHIFT_START]
+Afternoon shift on. What a mess. 
+
+[14:15:00] [7662] [MANUAL_LOG]
+I have to put this in the log again: Messy handover from the morning shift. Urs, please tell your guys to throw away their empty coffee cups. Also, I just found a 10mm wrench sitting right on the catwalk railing. Someone could have easily kicked it into the hopper and destroyed the grinder. Keep it clean!
+
+[14:20:00] [3174] [MAINTENANCE_TICKET]
+Locking out Line 3. I am dismantling the left-side ejector manifold. 
+
+[14:50:00] [8953] [LOGISTICS_LOG]
+Charge_ID 90 in from TransAlp. I have to hold it in the freezer staging area because Line 3 is down for maintenance. 
+
+[15:30:00] [1632] [MANUAL_LOG]
+While the line is down, 2130, 8779 and I are helping with the hand-sorting. My eyes are crossing from staring at green dots.
+
+[16:45:00] [2130] [MANUAL_LOG]
+Someone burned popcorn in the breakroom microwave. The whole floor smells like smoke. 
+
+[17:30:00] [3174] [MAINTENANCE_TICKET]
+Manifold rebuilt. I cleaned all 32 nozzles on the left side, replaced three O-rings that looked a bit worn, and checked the pressure lines. It took three hours but it's spotless. Restarting Line 3.
+
+[17:45:00] [1632] [MANUAL_LOG]
+Line 3 running. ...And the left side is still rapid-firing. The fix did absolutely nothing. Yield is 83%. 
+
+[18:00:00] [3174] [MAINTENANCE_TICKET]
+Are you kidding me? The pneumatics are perfect. If it's not mechanical, and it's not the UI thresholds, then it's a deep software bug in the camera processing. Tech Support needs to look at this tomorrow. 
+
+[18:40:00] [4368] [MANUAL_LOG]
+We're just running it as is. We have to clear the backlog. The reject bins are overflowing. We'll have to manually sort the rejects tomorrow too. 
+
+[19:15:00] [8953] [LOGISTICS_LOG]
+Delivering 10 more empty bins. Sector 4 looks like a warehouse for plastic boxes right now.
+
+[20:30:00] [2130] [MANUAL_LOG]
+My back hurts from bending over the sorting table. 
+
+[21:10:00] [9689] [CLEANING_LOG]
+There are squashed peas all over the floor around the hand-sorting table. I'm mopping it up. 
+
+[22:00:00] [7662] [SHIFT_HANDOVER]
+End of shift. What a frustrating day. At least it's only 3 more days until the holiday.
+
+================================================================================
+TUESDAY, 29.07.2025 (Day 2)
+================================================================================
+
+[05:40:00] [4786] [SHIFT_START]
+Morning shift. What a night. Those thunderstorms were absolutely biblical. The lightning was shaking my entire apartment block. Arrived at the plant and half the parking lot is flooded. 
+
+[05:45:00] [SYSTEM_KERNEL] BOOT SEQUENCE INITIATED
+> Unit: Bühler SORTEX Optical Sorter
+> Checking Peripherals...
+[SYSTEM_KERNEL] ERROR: I/O TIMEOUT ON SENSOR BUS.
+[SYSTEM_KERNEL] KERNEL PANIC. ABORTING BOOT.
+
+[05:48:00] [4786] [MANUAL_LOG]
+Line 3 will not boot. The screen just goes black after 10 seconds. 
+
+[05:50:00] [SYSTEM_KERNEL] BOOT SEQUENCE INITIATED
+> Unit: Bühler SORTEX Optical Sorter
+> Checking Peripherals...
+> Camera 1 (Top): FAIL - NO RESPONSE
+[SYSTEM_KERNEL] KERNEL PANIC. ABORTING BOOT.
+
+[05:55:00] [2743] [TECH_LOG]
+I am looking at the main power logs remotely. We had a massive power surge at 03:15 AM due to a lightning strike nearby. The UPS systems caught most of it, but the PLCs are acting completely dazed. 
+
+[06:05:00] [8980] [MANUAL_LOG]
+Just got a radio call from Sector 5. Line 4 is completely dead. Not even a standby light. 
+
+[06:10:00] [4467] [MAINTENANCE_TICKET]
+I'm over at Line 4 right now. The main transformer for this entire line is fried. I can actually smell ozone and melted copper. Line 4 is not booting today. Probably not tomorrow either. 
+
+[06:15:00] [7290] [MANUAL_LOG]
+Good morning! Wow, what a storm! That thunder reminded me of the great hail storm of '99. That year, the roof leaked right over the old packaging station. I see Line 3 is being stubborn. Let me try. 
+
+[06:18:00] [4786] [MANUAL_LOG]
+7290 just walked up to the dead SORTEX console. She didn't type anything. She just patted the side of the metal housing twice, exactly on the corner bracket, and pressed the green physical start button.
+
+[06:19:00] [SYSTEM_KERNEL] BOOT SEQUENCE INITIATED
+> Unit: Bühler SORTEX Optical Sorter
+> Checking Peripherals...
+> Camera 1 (Top): OK
+> Camera 2 (Side-A): OK
+> Camera 3 (Side-B): OK
+> Illumination Array: OK
+> Belt Drive: OK 
+[SYSTEM_KERNEL] SYSTEM READY. WAITING FOR BATCH.
+
+[06:20:00] [2743] [TECH_LOG]
+I... I have no engineering explanation for what just happened. But Line 3 is online. I'll take it. 
+
+[06:30:00] [8461] [LOGISTICS_LOG]
+Charge_ID 91, TransAlp, Gate B. Euro-Pool. We are routing all Line 4 traffic to Line 3 now because Line 4 is a paperweight. 
+
+[06:50:00] [1691] [MANUAL_LOG]
+Yield is still 83%. The left side is still rejecting everything. I'm going back to the hand-sorting table with Marie. 
+
+[07:20:00] [4031] [MANUAL_LOG]
+Eating leftover Zopf from yesterday while hand-sorting peas. Not a bad Tuesday.
+
+[08:00:00] [4356] [TECH_LOG]
+Tech Support here. Looking at the Bühler SORTEX Zone 1 issue from yesterday. Maintenance says pneumatics are fine. Shift Lead says thresholds are fine. This means the algorithm itself is corrupted for Zone 1. The spatial weighting array in the neural net must have desynchronized. 
+
+[08:15:00] [2743] [TECH_LOG]
+I agree with 4356. We are going to SSH into the PLC, dump the current model weights, and flash the factory default firmware. Then we'll re-upload the custom AlpenHarvest model. Halting the line.
+
+[08:50:00] [3898] [QC_LOG]
+I am testing the hand-sorted bins. The operators are doing a good job rescuing the product. Passed QC.
+
+[09:30:00] [5402] [MANUAL_LOG]
+Since the line is stopped, I brought croissants!
+
+[09:35:00] [4786] [MANUAL_LOG]
+Put the croissants on the table and step away from them, 5402. We have Zopf today anyway.
+
+[10:15:00] [4356] [TECH_LOG]
+Firmware flash at 80%. Taking longer than expected over the local network. 
+
+[10:45:00] [2743] [TECH_LOG]
+Firmware flashed. V4.1.2 reinstalled. Spatial matrices cleared and rebuilt. Rebooting the system.
+
+[11:00:00] [1691] [MANUAL_LOG]
+Taking my lunch break. Just three more days. 
+
+[11:30:00] [4356] [TECH_LOG]
+System online. Running a test batch. 
+
+[11:35:00] [4786] [MANUAL_LOG]
+It is still broken. Zone 1 is still ejecting perfectly good peas. It is firing exactly as much as yesterday. 
+
+[11:45:00] [2743] [TECH_LOG]
+That is computationally impossible. We completely wiped the memory. The model is pristine. There is no software reason for it to target the left side of the belt. 
+
+[12:15:00] [3898] [QC_LOG]
+I don't care if it's computationally impossible. My reject bins are full of gold-standard peas. Management is asking questions about the drop in overall plant efficiency, especially with Line 4 being dead. 
+
+[12:30:00] [7290] [MANUAL_LOG]
+Don't panic, kids! I brought my ergonomic sorting stool from 1998 out of storage. I will sit at the end of the line and catch the good peas. Everyone grab a bucket. It's like a harvest festival! 
+
+[13:00:00] [4356] [TECH_LOG]
+We are running diagnostics on the gigabit switch. Maybe packet loss on the camera feed for Zone 1 is causing the PLC to assume the missing data is a defect? We are replacing the ethernet cables.
+
+[13:40:00] [8980] [MANUAL_LOG]
+7290 is an absolute machine. She is sorting twice as fast as me and 4031 combined. She isn't even looking at her hands. 
+
+[14:00:00] [4786] [SHIFT_HANDOVER]
+Handing over to afternoon shift. Techs are under the machine swapping cables. Yield is terrible. 7290 is currently telling 5402 a story about how the CEO used to drive a tractor. Katya, the floor is yours.
+
+[14:10:00] [7662] [SHIFT_START]
+Afternoon shift. Katya here. It's chaotic. And Urs actually cleaned up his coffee cups this time. Thank you.
+
+[14:45:00] [8953] [LOGISTICS_LOG]
+Charge_ID 92 arriving from Gate B. 
+
+[15:30:00] [2130] [MANUAL_LOG]
+New cables installed by tech. Didn't fix it. The left ejector is still shooting like a machine gun.
+
+[16:45:00] [1577] [MAINTENANCE_TICKET]
+The forklift beeper in Sector 2 is stuck on. It's been beeping continuously for 40 minutes. It's driving us insane over here at Line 3.
+
+[17:15:00] [8953] [LOGISTICS_LOG]
+Sorry about the beeper. Forklift is isolated and turned off. Mechanic coming tomorrow.
+
+[17:50:00] [1632] [MANUAL_LOG]
+My fingers are green. Literally stained green from the peas. 
+
+[18:30:00] [2743] [TECH_LOG]
+We have exhausted all software troubleshooting protocols. The firmware is clean, the network is clean, the data streams are completely synchronized. The algorithm is behaving exactly as it should based on the pixel data it receives. 
+
+[19:00:00] [7662] [MANUAL_LOG]
+So if the software is fine, and the mechanical ejectors are fine, why is it shooting good peas?
+
+[20:15:00] [4356] [TECH_LOG]
+We don't know. We are escalating this to Bühler corporate support tomorrow morning. 
+
+[21:10:00] [6254] [CLEANING_LOG]
+Sweeping up under the hand-sort table. 
+
+[22:00:00] [7662] [SHIFT_HANDOVER]
+End of shift. We are hand-sorting the rejects to save the good peas. Everyone's back hurts except 7290, who stayed two hours overtime because she said she was "in the zone". 
+
+================================================================================
+WEDNESDAY, 30.07.2025 (Day 3)
+================================================================================
+
+[05:55:00] [4786] [SHIFT_START]
+Morning shift. Yield is 82%. Bühler corporate is supposed to remote into our system today. We have to keep the line running to meet the pre-holiday quota, even if it means hand-sorting the rejects. And we have extra load because Line 4 is still offline waiting for a transformer from Germany.
+
+[06:15:00] [4031] [MANUAL_LOG]
+My hands are cramping before the shift even really starts. 
+
+[06:30:00] [8461] [LOGISTICS_LOG]
+Charge_ID 94, TransAlp, Gate A. Double volume because of Line 4. 
+
+[07:10:00] [1691] [MANUAL_LOG]
+The sheer volume of peas coming down this belt is terrifying. 
+
+[07:45:00] [8980] [MANUAL_LOG]
+I am so tired of hand-sorting. My fingers are green. 
+
+[08:10:00] [7290] [MANUAL_LOG]
+Chin up, everyone! This is good for hand-eye coordination. Back before we had automatic defect tracking, we had to sort 5 tons a shift by hand. Build some character! Also, I brought Rivella for everyone. It's in the breakroom fridge. 
+
+[08:30:00] [2743] [TECH_LOG]
+Bühler Level 3 support is on the VPN. They are running a remote deep-scan of the optical matrices. 
+
+[09:15:00] [3898] [QC_LOG]
+I had to reject one of the hand-sorted bins. Someone let a small piece of corn stalk slip through. You guys need to pay attention, even if you are tired. 
+
+[09:45:00] [1691] [MANUAL_LOG]
+Two more days until the bonfire! I bought all the fireworks yesterday. The big Vulkan fountains. 
+
+[10:30:00] [4356] [TECH_LOG]
+Bühler support just got back to us. They say the raw telemetry from Camera 3 (which covers the left side) shows a persistent high-contrast artifact in the bottom left quadrant. The software is interpreting this artifact as a massive, continuous defect.
+
+[10:45:00] [4786] [MANUAL_LOG]
+What does "high-contrast artifact" mean in normal language? 
+
+[10:50:00] [2743] [TECH_LOG]
+It means the camera thinks it is seeing something bad. But the camera diagnostics show the lens is perfectly functional. Bühler thinks the camera sensor itself might be dying. They are overnighting a replacement camera unit. It will arrive tomorrow.
+
+[11:30:00] [4786] [MANUAL_LOG]
+So we suffer for another 24 hours. Great. 
+
+[12:15:00] [4031] [MANUAL_LOG]
+We've had to put three extra people on the reject bins just to salvage the good peas the machine is throwing away. It's slowing down the whole floor. 
+
+[12:50:00] [7290] [MANUAL_LOG]
+I keep telling 4031 to use the "scoop and flick" wrist motion. It's all in the wrist. If you use your whole arm, you'll be tired by noon! 
+
+[13:20:00] [8461] [LOGISTICS_LOG]
+I don't have anywhere to put these full bins. The staging area is completely full. 
+
+[13:45:00] [7296] [CLEANING_LOG]
+Swept the floor around Line 3. There are peas everywhere. The reject bins keep overflowing before the guys can hand-sort them. 
+
+[14:00:00] [4786] [SHIFT_HANDOVER]
+Shift over. New camera arrives tomorrow. Keep hand-sorting. Good luck, afternoon team.
+
+[14:10:00] [7662] [SHIFT_START]
+Afternoon shift. Yield is 81%. This is brutal.
+
+[14:40:00] [4368] [MANUAL_LOG]
+Taking over the sorting table. 
+
+[15:10:00] [1632] [MANUAL_LOG]
+I'm trying the scoop and flick. It actually works. Thanks 7290!
+
+[16:20:00] [2130] [MANUAL_LOG]
+My back is killing me. Hand-sorting 2 tons of peas because a camera is broken. 
+
+[17:00:00] [8953] [LOGISTICS_LOG]
+Charge_ID 95 arriving. Gate B. 
+
+[17:45:00] [9055] [QC_LOG]
+Charge_ID 95 tested. The peas that *do* make it through the left side are fine. The machine is just hyper-aggressive. 
+
+[18:30:00] [4368] [MANUAL_LOG]
+I dropped a bucket of sorted peas. I wanted to cry, but I just swept them into the feed bin.
+
+[19:30:00] [1632] [MANUAL_LOG]
+We are running out of empty crates for the sorted rejects. Logistics, we need more empty Euro-Pool crates at Line 3!
+
+[19:45:00] [8953] [LOGISTICS_LOG]
+Bringing a stack of 50 empty crates now. Hang in there.
+
+[20:40:00] [2130] [MANUAL_LOG]
+Just a few more hours. Tomorrow is the last day before the holiday. 
+
+[22:00:00] [7662] [SHIFT_HANDOVER]
+End of shift. One more day until the long weekend. Please let that camera arrive early.
+
+================================================================================
+THURSDAY, 31.07.2025 (Day 4)
+================================================================================
+
+[05:45:00] [4786] [SHIFT_START]
+Morning shift. Last day before the August 1st holiday. Everyone wants to go home early. If that camera doesn't arrive by noon, I am going to lose my mind. Line is running. Hand-sorting continues.
+
+[06:15:00] [8980] [MANUAL_LOG]
+I can already smell the bratwurst in my mind. Just 8 more hours of this.
+
+[06:40:00] [4031] [MANUAL_LOG]
+Scoop and flick. Scoop and flick. I will hear this in my dreams.
+
+[07:00:00] [8461] [LOGISTICS_LOG]
+Charge_ID 98, SpeedyLogistics, Gate B. No packages from Bühler on the morning courier truck.
+
+[07:10:00] [4786] [MANUAL_LOG]
+Unbelievable. 
+
+[07:30:00] [7290] [MANUAL_LOG]
+I brought my special holiday playlist. We are listening to Swiss accordion music until that camera arrives. It makes the hand-sorting go faster! I promise! 
+
+[08:15:00] [1691] [MANUAL_LOG]
+The accordion music is actually helping. Or maybe I'm just going crazy. 
+
+[08:30:00] [5402] [MANUAL_LOG]
+Hey Urs, since we're waiting for the part, I was looking at the machine. 
+
+[08:32:00] [4786] [MANUAL_LOG]
+5402, do not touch anything. 
+
+[08:35:00] [5402] [MANUAL_LOG]
+I didn't touch it! I just used the flashlight on my iPhone to look inside the illumination chamber under Camera 3. 
+
+[08:40:00] [4786] [MANUAL_LOG]
+And? Did you find the dying pixel matrix? 
+
+[08:45:00] [5402] [MANUAL_LOG]
+No, but there is a dark brown, crusty spot right on the inside of the glass. It looks like a burned fingerprint. 
+
+[08:46:00] [4786] [MANUAL_LOG]
+...What?
+
+[08:50:00] [2743] [TECH_LOG]
+Wait. Halting the line. I'm coming down.
+
+[09:05:00] [2743] [TECH_LOG]
+I don't believe this. 5402 is right. Someone must have touched the inside of the protective glass with a greasy mechanic's glove during the last deep clean. The intense heat from the LED array slowly baked that grease into a solid, dark brown smudge right in the bottom left corner of Camera 3's field of view. 
+
+[09:10:00] [4356] [TECH_LOG]
+The camera was perfectly fine. The algorithm was perfectly fine. The software was seeing the baked grease spot, and because the belt is moving in the background, the optical illusion made the system think it was seeing a continuous, never-ending stream of brown, defective peas passing by on the left side. 
+
+[09:15:00] [3174] [MAINTENANCE_TICKET]
+I spent four hours rebuilding a pneumatic manifold because of a dirty fingerprint. 
+
+[09:16:00] [2743] [TECH_LOG]
+I wiped the entire memory of the PLC because of a dirty fingerprint. 
+
+[09:20:00] [4786] [MANUAL_LOG]
+I unlatched the glass. I wiped the smudge off with industrial solvent. It took exactly three seconds. 
+Restarting the line. 
+
+[09:25:00] [7290] [MANUAL_LOG]
+I haven't laughed this hard since the forklift drove into the mayonnaise vat in 2012! Oh, my sides hurt. I hope whoever left that fingerprint was wearing gloves, or we can dust it for prints! 
+
+[09:30:00] [8980] [MANUAL_LOG]
+Yield is 99.1%. The left ejectors are completely quiet unless a real bad pea comes through. 
+
+[09:35:00] [4786] [MANUAL_LOG]
+5402. Good job. You can have a croissant today. 
+
+[09:40:00] [8980] [MANUAL_LOG]
+Good that we have changed to the digital shift log in the last digitalization initiative. Everything is documented down to the second.
+
+[09:45:00] [4031] [MANUAL_LOG]
+Yeah, very reliable. Just a month ago we lost two weeks of entries and IT is still trying to recover them from the backup server. 🙄
+
+[10:00:00] [3898] [QC_LOG]
+Reject bins are looking completely normal. No good peas being wasted. We can stand down the hand-sorting team. You can pack up your ergonomic stool, 7290.
+
+[10:40:00] [4031] [MANUAL_LOG]
+I am stretching my back. I feel like a new person. 
+
+[11:00:00] [8779] [MANUAL_LOG]
+Canteen is doing a pre-holiday BBQ outside! They have real St. Galler Bratwurst. Morale is instantly restored.
+
+[11:50:00] [1691] [MANUAL_LOG]
+The bratwurst was amazing. And no more sorting. Best day ever.
+
+[12:30:00] [4786] [MANUAL_LOG]
+Production is flying. We are catching up on the quota quickly since we aren't throwing away 15% of our product anymore. And Line 3 is handling the overflow from Line 4 like a champ.
+
+[13:10:00] [8461] [LOGISTICS_LOG]
+Moving out the pallets twice as fast now. Logistics is happy.
+
+[14:00:00] [4786] [SHIFT_HANDOVER]
+Handing over to the final shift of the week. The machine is flawless. The smudge is gone. Enjoy the evening. Happy August 1st everyone.
+
+[14:15:00] [7662] [SHIFT_START]
+Afternoon shift. Taking over. Belt at 1.5 m/s. Everyone is in a great mood. Music is playing on the floor. 
+
+[14:40:00] [2130] [MANUAL_LOG]
+I am just standing here watching the machine work perfectly. It's beautiful. 
+
+[15:30:00] [8953] [LOGISTICS_LOG]
+Last truck of the week just unloaded. We are shutting the loading dock doors. 
+
+[16:20:00] [1632] [MANUAL_LOG]
+Washing the green stains off my hands with industrial soap. 
+
+[17:00:00] [4368] [MANUAL_LOG]
+Last batch of Royal Garden is in the hopper. 
+
+[18:00:00] [7662] [MANUAL_LOG]
+Hopper is empty. Line 3 is clear. Yield finished at 98.8%. 
+
+[18:30:00] [1577] [MAINTENANCE_TICKET]
+Secured the machine for the long weekend. I locked the camera housings. No more greasy fingers are getting in there. 
+
+[19:00:00] [7662] [SHIFT_HANDOVER]
+Shutting down the power to the main drive. Have a fantastic National Day, everyone! Grill some sausages for me. 
+
+[19:30:00] [9689] [CLEANING_LOG]
+Final deep clean of the floor finished. Swept up the last of the hand-sorted peas. Locking up Sector 4. 
+
+[19:45:00] [SYSTEM_KERNEL] INITIATING STANDBY MODE.
+> Peripherals offline.
+> Core temperature nominal. 
+[SYSTEM_KERNEL] SLEEP.
+
+================================================================================
+FRIDAY, 01.08.2025 (Day 5) - PUBLIC HOLIDAY
+================================================================================
+
+[00:00:00] [FACILITY_SYSTEM]
+STATUS: SECURE. 
+MODE: HOLIDAY LOCKDOWN. 
+NOTE: SWISS NATIONAL DAY (BUNDESFEIER).
+
+[08:00:00] [SYSTEM_KERNEL] AUTOMATED PING. STATUS: GREEN.
+[12:00:00] [SYSTEM_KERNEL] AUTOMATED PING. STATUS: GREEN.
+[16:00:00] [SYSTEM_KERNEL] AUTOMATED PING. STATUS: GREEN.
+[20:00:00] [SYSTEM_KERNEL] AUTOMATED PING. STATUS: GREEN.
+
+[23:59:00] [SYSTEM_KERNEL] WEEKLY LOG EXPORT INITIATED...

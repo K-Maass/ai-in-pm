@@ -1,0 +1,540 @@
+################################################################################
+# SAP S/4HANA EXPORT - CROSS-MODULE DUMP
+# SITE: ZURICH-OERLIKON (SECTOR 4)
+# COST CENTER: 4402-B (SORTING LINE 3)
+# PERIOD: WEEK 32 (04.08.2025 - 08.08.2025)
+# EXPORT DATE: 08.08.2025 23:59
+# USER: SYSTEM_ADMIN_04
+# SECURITY: INTERNAL ONLY / DO NOT DISTRIBUTE
+# NOTE: RAW OPERATOR LOGBOOK EXTRACT - UNFILTERED
+################################################################################
+
+================================================================================
+MONDAY, 04.08.2025 (Day 1)
+================================================================================
+
+[05:45:00] [7662] [SHIFT_START] 
+Starting morning shift. Shift rotation is in effect! My team is on the early shift this week, and 4786 (Urs) and his team are taking the late shift. Hope everyone had a good long weekend for the August 1st public holiday. The fireworks over the lake were great, but reality is back. 
+
+[06:02:15] [SYSTEM_KERNEL] BOOT SEQUENCE INITIATED
+> Unit: Bühler SORTEX Optical Sorter
+> Firmware: v4.1.3 
+> Checking Peripherals...
+> Camera 1 (Top): OK
+> Camera 2 (Side-A): OK
+> Camera 3 (Side-B): OK
+> Illumination Array: OK (Intensity: 97%)
+> Belt Drive: OK (Tension: 448N - Warning)
+> Packaging Link: OK (Tape Module: Low Warning)
+[SYSTEM_KERNEL] SYSTEM READY. WAITING FOR BATCH.
+
+[06:12:30] [8194] [MANUAL_LOG] 
+First batch of Royal Garden in from Logistics. TransAlp truck, Euro-Pool pallets. The Bühler ejector sounds asthmatic. Pfft-pfft instead of a sharp crack. We need maintenance here before we start the main run.
+
+[06:30:15] [3174] [MAINTENANCE_TICKET] 
+Checked the ejector manifold on the SORTEX. Found a frozen chunk of pea-dust blocking nozzle 4 and 7. Cleared with compressed air. Also, who keeps taking my 10mm wrench?
+
+[06:45:00] [8461] [LOGISTICS_LOG]
+Charge_ID 2 arriving from Gate B. TransAlp. RFID Tag E84ECC40E9E42D96 scanned successfully. Feeding into the hopper.
+
+[07:15:00] [1632] [MANUAL_LOG]
+Warning light on the end-of-line packaging machine. It says the 50mm clear tape roll is at 5%. I'll check the cabinet.
+
+[07:20:00] [1632] [MANUAL_LOG]
+The cabinet is completely empty. No tape. I'm calling Logistics.
+
+[07:35:00] [8461] [LOGISTICS_LOG]
+Received call from 1632. I checked the main warehouse. We are out of the standard AlpenHarvest branded tape. Procurement messed up the order before the holiday. I am looking for alternatives in Sector 2.
+
+[07:45:00] [7662] [MANUAL_LOG]
+Machine performing weirdly. The belt speed is fluctuating. Setting says 1.5 m/s, but visually it looks like it's surging to 2.0 then dropping. Peas are clumping.
+
+[08:25:00] [2130] [MANUAL_LOG]
+Packaging machine just ran out of tape completely. Alarm is sounding. The cardboard boxes are coming out open. 
+
+[08:30:00] [7662] [MANUAL_LOG]
+Stopping the SORTEX line. Hopper is full because we can't pack the accepted peas. 8461, where is the tape?!
+
+[08:45:00] [8461] [LOGISTICS_LOG]
+I found two boxes of generic clear tape in the basement storage. It's unbranded and looks a bit old, but it's 50mm. Bringing it to Line 3 now.
+
+[09:05:00] [3174] [MAINTENANCE_TICKET]
+Loaded the generic tape into the packaging machine. Restarting line.
+
+[09:15:00] [1632] [MANUAL_LOG]
+The generic tape is garbage. It's too thin. The automatic tensioner on the box sealer is snapping the tape every 5th box. I have to manually re-thread it through the rollers every time it snaps.
+
+[09:35:10] [2743] [TECH_LOG]
+Checking "Feature 12 overflow". It's the density sensor array. I rebooted the peripheral controller. Seems the sensor gets confused when two peas are stuck together with ice. Adjusted the mechanical shaker frequency from 40Hz to 45Hz to break up the ice clumps before they hit the SORTEX belt.
+
+[10:15:00] [9055] [QC_LOG]
+Sample from Charge_ID 2 checked. Good crunch, color is within AlpenHarvest spec. But found a small piece of blue plastic. Looks like a shard from a Euro-Pool pallet. Telling logistics to inspect the pallets from Gate B.
+
+[10:45:00] [2130] [MANUAL_LOG]
+Tape snapped again. Re-threading. We have 40 open boxes piling up on the conveyor. 
+
+[11:00:00] [2529] [MANUAL_LOG]
+Canteen menu today: Zueri Gschnetzlets but the meat looks like old shoe leather. Taking my break now. 
+
+[11:20:00] [8194] [MANUAL_LOG]
+Taking over tape duty from 2130. This is a nightmare. The tape adhesive is leaving a sticky residue on the cutting blade. It's jamming. 
+
+[11:35:00] [3174] [MAINTENANCE_TICKET]
+Machine halted for 10 minutes. I have to clean the cutting blade with industrial solvent. The cheap adhesive is gumming up the springs.
+
+[12:15:00] [8461] [LOGISTICS_LOG]
+SpeedyLogistics truck at Gate A. Charge_ID 1. Euro-Pool. Plastic shard issue communicated to the driver. He just shrugged. 
+
+[12:50:00] [8194] [MANUAL_LOG]
+Tape snapped. Re-threading.
+
+[13:10:00] [7296] [CLEANING_LOG]
+Someone dropped a whole crate of grade B peas under the walkway of Line 3. It's a slip hazard. Cleaned it up. 
+
+[14:00:00] [7662] [SHIFT_HANDOVER]
+Handing over to afternoon shift. Line is mostly okay but the tape situation is critical. 8194 is practically living inside the packaging machine. Good luck Urs.
+
+[14:05:00] [4786] [SHIFT_START]
+Afternoon shift starting. Taking over. 
+
+[14:10:00] [4786] [MANUAL_LOG]
+I have to put this on the record immediately: Messy handover from the morning shift! 7662, your team left the packaging area looking like a sticky warzone. There are torn pieces of tape everywhere, a solvent rag left on top of the PLC monitor, and empty paper cups on the control panel. I spent my first 15 minutes cleaning up your mess. Clean up after yourselves next time!
+
+[14:40:00] [4031] [MANUAL_LOG]
+Tape snapped. Re-threading.
+
+[15:15:00] [8980] [MANUAL_LOG]
+What did you guys do to the UI? Half the text on the screen is in French now. "Vitesse du tapis"? 
+
+[15:30:20] [1139] [TECH_LOG]
+Sorry 8980, that was me. The firmware update yesterday reset the locale settings for some reason. I'll switch it back to German at the next pause. 
+
+[15:50:00] [4031] [MANUAL_LOG]
+Blade jammed with glue again. 
+
+[16:05:00] [1577] [MAINTENANCE_TICKET]
+Cleaning the tape blade with solvent. Production paused. We are losing so much throughput to this packaging issue.
+
+[16:45:00] [3898] [QC_LOG]
+Charge_ID 1 is running. Quality is dropping. The camera is rejecting perfectly good peas. The rejection bin is filling up way too fast. 
+
+[17:10:00] [1139] [TECH_LOG]
+Looking at the SORTEX camera feeds. Camera 2 is seeing shadows as dark spots because the overhead hall lights are flickering. The ballast in the ceiling fixture above Line 3 is failing. 
+
+[17:30:00] [1577] [MAINTENANCE_TICKET]
+I can't reach the ceiling fixture while the machine is running. For now, I've taped a piece of cardboard to the side of the machine to block the flickering light from hitting the belt. It looks stupid but the yield went back up to 96%. (And yes, I used the terrible thin tape to hold the cardboard, it barely sticks).
+
+[18:15:00] [4368] [MANUAL_LOG]
+Tape snapped. 
+
+[18:45:00] [1691] [MANUAL_LOG]
+Machine halted. Alarm: CAMERA 2 DESYNC.
+
+[18:50:00] [7099] [MAINTENANCE_TICKET]
+Camera 2 desync issue. I opened the casing. The vibration dampener on the camera mount is cracked. The camera was shaking so much the software couldn't focus, so it threw a desync error. Replaced dampener with a spare from Line 2. Rebooted. 
+
+[19:20:00] [8237] [LOGISTICS_LOG]
+Charge_ID 3 arrived. TransAlp. Euro-Pool. 
+
+[20:10:00] [8980] [MANUAL_LOG]
+Running smooth again. Yield is at 94%. Tape hasn't snapped in 40 minutes, a new record.
+
+[21:15:00] [4031] [MANUAL_LOG]
+Spoke too soon. Tape snapped.
+
+[22:00:00] [4786] [SHIFT_HANDOVER]
+Shutting down for the night. Line 3 is clear. Cleaners are coming in.
+
+================================================================================
+TUESDAY, 05.08.2025 (Day 2)
+================================================================================
+
+[05:45:00] [1632] [MANUAL_LOG]
+2130, I told you! The system never fails when you clock OUT, only when you clock IN. It's programmed to steal our overtime! 🤣
+
+[05:50:00] [7662] [SHIFT_START]
+Morning shift. Yield 94%? Unacceptable. I'm recalibrating the color thresholds. And who taped a piece of cardboard to the Bühler machine?! Taking it off.
+
+[06:10:00] [8194] [MANUAL_LOG]
+Loaded a new roll of the generic tape. We only have 8 rolls left from what 8461 found in the basement.
+
+[06:20:00] [7662] [MANUAL_LOG]
+Thresholds adjusted. R_val < 40, G_val > 180. Let's see if we can get this back to 98%.
+
+[06:45:00] [2743] [TECH_LOG]
+7662, you took off the cardboard, now the yield is dropping again because of the flickering light. I am putting the cardboard back until 1577 replaces the bulb.
+
+[07:15:00] [8461] [LOGISTICS_LOG]
+Just read the internal newsletter. Did you guys see the news from the UN conference in Geneva yesterday? They are drafting a massive agreement to reduce single-use packaging in global food supply chains. Management is thrilled. They said our switch to 100% reusable Euro-Pool pallets for incoming logistics puts AlpenHarvest way ahead of the curve. It's nice to see we're doing the right thing for the environment without having to change our processes again! 
+
+[07:45:00] [1632] [MANUAL_LOG]
+Tape snapped. Threading it back. 
+
+[09:15:00] [8461] [LOGISTICS_LOG]
+Charge_ID 4 arriving from TransAlp. Gate A. Plastic Pallets this time. RFID BFD98D5F9A1D1DAD.
+
+[09:50:00] [2130] [MANUAL_LOG]
+Tape snapped. The roll is completely warped. 
+
+[10:20:00] [3174] [MAINTENANCE_TICKET]
+I adjusted the tension springs on the packaging machine to the lowest possible setting. Maybe it will stop snapping the thin tape.
+
+[10:45:00] [2529] [MANUAL_LOG]
+Machine is acting weird again. The accepted peas have ice crystals on them. The freezer tunnel before the sorter is running too cold, causing frosting. The SORTEX thinks the white frost is a defect and is rejecting them. 
+
+[11:00:00] [4356] [TECH_LOG]
+Adjusted freezer tunnel temp. Bypassing the optical sorter's "white pixel" rule for the next 20 minutes to let the frosted batch pass, otherwise we lose 2 tons of good peas. 
+
+[11:22:00] [7662] [MANUAL_LOG]
+4356, bypassing the rules is how we end up with animal feed in Migros bags. I'm watching the belt manually. If I see a bad pea, I'm pulling it by hand. 
+
+[11:50:00] [8194] [MANUAL_LOG]
+Lowering the tension spring didn't help. The tape didn't snap, but because there's no tension, the tape is just loosely drooping over the boxes and not sealing them. Half the boxes are popping open on the palletizer.
+
+[12:15:00] [3174] [MAINTENANCE_TICKET]
+Tightened the spring back up. We'll just have to deal with it snapping.
+
+[13:10:00] [6254] [CLEANING_LOG]
+7662 dropped a lot of peas on the floor while "pulling them by hand". Swept it up.
+
+[13:40:00] [2130] [MANUAL_LOG]
+Tape snapped. That's the 6th time today. 
+
+[14:00:00] [7662] [SHIFT_HANDOVER]
+Handing over. Urs, try not to complain about the tape, we're doing our best. 
+
+[14:05:00] [4786] [SHIFT_START]
+Afternoon shift starting. Line 3 is running at 1.5 m/s. Humidity is steady at 45.0%.
+
+[15:05:00] [5402] [MANUAL_LOG]
+Hey Urs, I was trying to take a slow-motion video of the ejectors firing for my university report.
+
+[15:08:00] [4786] [MANUAL_LOG]
+5402, get your phone away from the belt right now.
+
+[15:12:00] [8980] [MANUAL_LOG]
+Dave dropped his iPhone into the hopper. It went down the belt and the SORTEX immediately shot it into the reject bin.
+
+[15:15:00] [4786] [MANUAL_LOG]
+Well, the machine correctly identified the iPhone 15 as a "Defect". Dave is currently digging through 50kg of rejected peas to find it. Production is unaffected. 
+
+[16:30:00] [4368] [MANUAL_LOG]
+Why is the UI blinking "Maintenance Required: Lubricate Bearings"? We did that last week.
+
+[16:45:00] [1577] [MAINTENANCE_TICKET]
+The PLC counter for operating hours is bugged. It thinks it's been running for 8000 hours since last week. I just hit clear. If you hear grinding, let me know. 
+
+[18:00:00] [4031] [MANUAL_LOG]
+Blade is jammed with glue again. I'm not calling maintenance, I'll just scrape it with a box cutter. 
+
+[18:20:00] [3898] [QC_LOG]
+Weird readings from Charge_ID 5. The peas are unusually small. The system isn't rejecting them, but they don't look like standard grade.
+
+[19:20:00] [8980] [MANUAL_LOG]
+Hearing a slight grinding noise from the main drive drum. Not too loud, but noticeable.
+
+[19:35:00] [1577] [MAINTENANCE_TICKET]
+...okay I'll come down and actually grease the bearings.
+
+[20:15:00] [4031] [MANUAL_LOG]
+Tape snapped. We only have 3 rolls of this garbage left.
+
+[22:00:00] [4786] [SHIFT_HANDOVER]
+End of shift. Bearings greased. Yield stable at 97.5%. 
+
+================================================================================
+WEDNESDAY, 06.08.2025 (Day 3)
+================================================================================
+
+[05:55:00] [7662] [SHIFT_START]
+Bearings sound fine today. But the UI language keeps randomly switching to French every 10 minutes. "Vitesse du tapis" again. As long as the Bühler sorts, I don't care what language it speaks. 
+
+[06:15:00] [1632] [MANUAL_LOG]
+Morning. We are on the second to last roll of tape. 
+
+[06:30:00] [8237] [LOGISTICS_LOG]
+Charge_ID 6, TransAlp, Gate B. Euro-Pool. RFID 728ABC49F9BB6BB1.
+
+[07:10:00] [2130] [MANUAL_LOG]
+Line 3 is ghost-ejecting. Nothing on the belt, but the air valves are firing randomly. Pfft... pfft... pfft. It's wasting compressed air.
+
+[07:30:00] [7465] [TECH_LOG]
+Ghost-ejecting is caused by dust on the background reference plate. The camera sees a dust spec, compares it to the threshold, thinks it's a brown spot on a pea, and fires. 
+Fix: Removed the glass screen, wiped down the reference plate with isopropyl alcohol. 
+
+[08:20:00] [8194] [MANUAL_LOG]
+Tape snapped. Re-threaded.
+
+[09:00:00] [1632] [MANUAL_LOG]
+I brought Gipfeli for the team to survive the tape disaster! They are in the breakroom.
+
+[09:45:00] [8461] [LOGISTICS_LOG]
+Procurement update: The supplier for the branded tape is still out of stock. But they sent us an emergency pallet of substitute tape. It just arrived at Gate B. Sending it to Line 3.
+
+[10:00:00] [2130] [MANUAL_LOG]
+The new tape is here. Wait. This is brown paper packing tape. The kind with the dry glue on the back that you have to wet with a sponge to make it sticky.
+
+[10:10:00] [7662] [MANUAL_LOG]
+Are you kidding me? Our automatic box sealer doesn't have a water-wetting module. It only takes plastic pressure-sensitive tape. We can't use this paper tape in the machine.
+
+[10:30:00] [9055] [QC_LOG]
+Checking the logs. Because the PLC keeps switching locales, the CSV export is using commas instead of dots for decimals. The data lake is rejecting our uploads. We need IT to lock the region settings.
+
+[10:50:00] [1632] [MANUAL_LOG]
+The last roll of the clear generic tape just ran out. We are completely out of usable machine tape.
+
+[11:00:00] [7662] [MANUAL_LOG]
+Stopping the SORTEX line. Hopper full.
+
+[11:15:00] [8215] [MANUAL_LOG]
+I am not letting Line 3 sit idle all day. 1632, 2130, grab damp sponges. We are going to wipe the brown paper tape by hand and seal the boxes manually at the end of the conveyor. Restarting the Bühler.
+
+[11:40:00] [2529] [MANUAL_LOG]
+Machine weirdness: The "Total Sorted" counter on the UI is going backwards. It went from 12,040 kg to 11,900 kg. 
+
+[12:05:00] [1139] [TECH_LOG]
+The counter variable is an unsigned integer and someone set the offset to a negative value in the calibration menu. *cough* 5402 *cough*. Fixed it. 
+
+[12:30:00] [2130] [MANUAL_LOG]
+My hands are completely covered in wet, sticky starch glue. Manual taping is too slow. The boxes are backing up on the conveyor. 
+
+[12:50:00] [1632] [MANUAL_LOG]
+The sponge is getting too dirty, the glue isn't activating properly. The boxes are popping open. I'm switching to a wet rag.
+
+[13:30:00] [7662] [MANUAL_LOG]
+We have to run the SORTEX in micro-batches. Run for 20 minutes, pause for 10 minutes to let 1632 and 2130 catch up with the manual taping. This is 19th-century factory work.
+
+[14:00:00] [7662] [SHIFT_HANDOVER]
+Shift over. The SORTEX is running. We are hand-gluing boxes. Have fun, Urs.
+
+[14:05:00] [4786] [SHIFT_START]
+Afternoon shift. Everything looks green, except the guys covered in brown paper tape.
+
+[14:30:00] [4031] [MANUAL_LOG]
+Taking over manual taping. This paper tape smells weird when it gets wet. 
+
+[15:20:00] [4368] [MANUAL_LOG]
+We got a weird batch in from Logistics. The peas are huge. Like, marbles. Line 3 is rejecting 40% of them for "Oversize". 
+
+[15:45:00] [3583] [MAINTENANCE_TICKET]
+4368, those are the new "Jumbo" variety from the test farm. The profile for them isn't loaded on Line 3. It's only on Line 1. You have to route them over. 
+I'm updating the routing flap. 
+
+[16:15:00] [4031] [MANUAL_LOG]
+Rag is too wet, it soaked through the cardboard box and compromised the structural integrity. Box collapsed on the palletizer. Peas everywhere.
+
+[17:10:00] [3898] [QC_LOG]
+Jumbo peas are passing Line 1 fine, but Line 3 is still trying to process the leftovers in the hopper. It's a disaster. The air ejectors aren't strong enough to blow the heavy peas off the belt. They just wobble and stay on.
+
+[18:10:00] [8980] [MANUAL_LOG]
+The routing flap jammed. Half the jumbo peas went to Line 1, the other half fell into the gap between the belts. It's a mess. 
+
+[18:30:00] [9097] [CLEANING_LOG]
+It took me 40 minutes to dig jumbo peas out of the belt gears. You guys owe me big time. 
+
+[20:00:00] [1577] [MAINTENANCE_TICKET]
+Replaced the ceiling bulb above Line 3. Took the cardboard off. 
+
+[20:45:00] [4368] [MANUAL_LOG]
+Still hand-taping. I will hear the sound of tearing paper in my nightmares.
+
+[21:10:00] [8461] [LOGISTICS_LOG]
+Good news. I found a supplier in Oerlikon who had some industrial clear tape in stock. Not branded, but standard 50mm plastic tape. It gets delivered tomorrow morning at 08:00.
+
+[22:00:00] [4786] [SHIFT_HANDOVER]
+End of shift. What a mess. My fingers are permanently sticky from that brown paper tape.
+
+================================================================================
+THURSDAY, 07.08.2025 (Day 4)
+================================================================================
+
+[05:45:00] [7662] [SHIFT_START]
+Morning. The blinds on the east windows are stuck open again. The morning sun is hitting the SORTEX directly. And yes, we are still hand-taping boxes with wet sponges until 08:00.
+
+[06:15:00] [2130] [MANUAL_LOG]
+7662 is right. The sunlight is blinding Camera 1. It's throwing false positives left and right because the glare looks like yellow defects. Yield is dropping to 88%.
+
+[06:30:00] [3174] [MAINTENANCE_TICKET]
+I can't fix the blinds right now, the motor is burnt out. I hung a tarp over the window. Looks like a construction site, but the glare is gone. Yield back to 97%.
+
+[07:10:00] [1632] [MANUAL_LOG]
+My sponge fell into the reject bin. I'm using paper towels to wet the tape now. Only 50 minutes until the plastic tape arrives.
+
+[08:00:00] [8461] [LOGISTICS_LOG]
+Charge_ID 10, TransAlp, Gate B. Euro-Pool. RFID CA4A77DBCDF6C57F.
+
+[08:15:00] [8461] [LOGISTICS_LOG]
+The new plastic tape arrived! Sector 4 is saved. Loading it into the packaging machine now.
+
+[08:45:00] [2130] [MANUAL_LOG]
+The new tape won't stick. The boxes are popping open as they go down the conveyor line. It's a disaster. 
+
+[09:10:00] [3174] [MAINTENANCE_TICKET]
+I looked at the new tape. The delivery truck was refrigerated. The tape is freezing cold, so the acrylic adhesive is dead. We have to let the rolls sit at room temperature for a few hours before we can use them. 
+
+[09:15:00] [7662] [MANUAL_LOG]
+You have to be joking. Stop the SORTEX. We can't pack. I'm putting the tape rolls near the office heater.
+
+[10:10:00] [1632] [MANUAL_LOG]
+I checked the tape by the heater. Still too cold. Adhesive feels like smooth plastic.
+
+[11:00:00] [2529] [MANUAL_LOG]
+Machine weirdness: Line 3 suddenly stopped. The screen says "WAITING FOR NETWORK". We're hardwired. How can it wait for a network?
+
+[11:15:00] [2743] [TECH_LOG]
+The switch in the server cabinet died. I bypassed it and plugged the PLC directly into the main hub. It's back online, but the system is still stuck in French. 
+
+[11:45:00] [8194] [MANUAL_LOG]
+Tape rolls feel warm enough. Loading them into the machine. 
+
+[12:00:00] [8194] [MANUAL_LOG]
+It works! The boxes are sealing perfectly. No snapping. No wet sponges. Restarting the Bühler SORTEX. We have a huge backlog to clear.
+
+[12:30:00] [9055] [QC_LOG]
+We've got an issue with Charge_ID 10. The peas have a slight brownish tint. The Bühler is rejecting them, but the manual override was triggered. Who triggered it?
+
+[12:40:00] [7662] [MANUAL_LOG]
+I triggered it. The brown tint is natural for this specific harvest lot. It's fine. 
+
+[12:55:00] [9055] [QC_LOG]
+7662, you can't just override the optical sorter because you *feel* like it. Quality standards are strict. 
+
+[13:00:00] [7662] [MANUAL_LOG]
+9055, I've been doing this for years. The machine is too sensitive. If we reject these, we lose the whole batch.
+
+[13:40:00] [2130] [MANUAL_LOG]
+Just watching the automatic packaging machine seal boxes effortlessly. It's beautiful. 
+
+[14:00:00] [7662] [SHIFT_HANDOVER]
+Handing over. Batch 10 is running on override. Do not turn the override off. The tape is working. Finally.
+
+[14:10:00] [4786] [SHIFT_START]
+Taking over. Leaving the override on, but I'm making a note of it.
+
+[15:15:00] [4031] [MANUAL_LOG]
+Packaging is running so fast now that the palletizer is backing up. A good problem to have for once.
+
+[15:45:00] [8980] [MANUAL_LOG]
+Line 3 smells like burning rubber. 
+
+[16:00:00] [7099] [MAINTENANCE_TICKET]
+Burning smell is from the drive belt slipping. The tension was too loose (448N). I tightened it to 480N. Smell is gone. 
+
+[16:45:00] [4368] [MANUAL_LOG]
+The packaging tape just jammed. The blade on the tape machine is completely covered in crusty brown glue from yesterday's wet paper tape experiment.
+
+[17:05:00] [3174] [MAINTENANCE_TICKET]
+Cleaning the blade with solvent. Again. Production paused for 15 minutes. 
+
+[17:30:00] [8237] [LOGISTICS_LOG]
+Charge_ID 12 from TransAlp. Gate A. Plastic pallets. RFID 29B1EEBE2A1B706B.
+
+[18:20:00] [4368] [MANUAL_LOG]
+Blade clean. Taping smoothly again.
+
+[19:00:00] [1691] [MANUAL_LOG]
+Someone spilled coffee near the control panel. The 'EJECT' manual test button is sticky now. 
+
+[19:15:00] [6150] [CLEANING_LOG]
+Cleaned the control panel with alcohol wipes. Tell 5402 to drink his coffee in the breakroom.
+
+[20:30:00] [8980] [MANUAL_LOG]
+Yield looks great right now. 98.5%. Everything is running smoothly for once. 
+
+[21:10:00] [8237] [LOGISTICS_LOG]
+Charge_ID 13 arrived. SpeedyLogistics. 
+
+[22:00:00] [4786] [SHIFT_HANDOVER]
+End of shift. Shutting down. We actually managed a decent throughput today despite the morning tape fiasco.
+
+================================================================================
+FRIDAY, 08.08.2025 (Day 5)
+================================================================================
+
+[05:45:00] [7662] [SHIFT_START]
+Last day of the week. Let's try not to break anything. The tarp on the window is still there. Looks terrible. Packaging line is fully stocked with the good, warm plastic tape.
+
+[06:20:00] [2130] [MANUAL_LOG]
+Charge_ID 14 starting. SpeedyLogistics, Gate A. 
+
+[07:10:00] [1632] [MANUAL_LOG]
+Box sealer is humming along. No snaps. 
+
+[09:15:00] [8194] [MANUAL_LOG]
+Wait. I just checked the tape supply cabinet. We are down to one roll of tape left. Are you serious? Where did all the tape from yesterday go? We had 30 rolls!
+
+[09:30:00] [8461] [LOGISTICS_LOG]
+I checked the security cameras. Sector 1 ran out of their tape last night. Their shift manager came over to Sector 4 at 3:00 AM and took the entire box of our new tape from our staging area. They stole our tape!
+
+[09:45:00] [7662] [MANUAL_LOG]
+I am going to walk over to Sector 1 and I am going to have a very loud conversation with 9045. Keep the line running until this last roll is empty. Do not stop unless the hopper overflows.
+
+[10:15:00] [9055] [QC_LOG]
+Charge_ID 14 looks perfect. Emerald green, round. Real Oerlikon Gold Standard. Yield is at 98.2%. Beautiful.
+
+[10:45:00] [7662] [MANUAL_LOG]
+I'm back. I have our box of tape. It was an ugly fight, 9045 threatened to call HR, but I won. Load it in. Do not let Sector 1 near our staging area again.
+
+[11:00:00] [2529] [MANUAL_LOG]
+Canteen is serving Fish Friday. Smells weird. Skipping lunch.
+
+[11:30:00] [2130] [MANUAL_LOG]
+Tape roll changed. Running smoothly. 
+
+[12:20:00] [1632] [MANUAL_LOG]
+Weirdness again. The Bühler ejector is firing, but it's firing slightly late. The bad peas are passing, and the good peas right behind them are getting shot into the reject bin.
+
+[12:45:00] [7465] [TECH_LOG]
+Checked the timing delay on the ejectors. The software update from Monday introduced a 15-millisecond latency in the signal processing. At 1.5 m/s, the pea travels 2.25 cm in that time. The ejector was missing the target. 
+Fix: Reverted firmware to v4.1.1. Timing is back in sync. Yield restoring.
+
+[13:20:00] [8194] [MANUAL_LOG]
+Tape almost out. Swapping to a fresh roll from our recovered stash. 
+
+[14:00:00] [7662] [SHIFT_HANDOVER]
+My shift is over. Good riddance to this week. Do not touch the firmware, do not touch the speed dial. Protect the tape with your life. Have a good weekend.
+
+[14:15:00] [4786] [SHIFT_START]
+Taking over the Friday afternoon slump. Everyone is tired. Line is running steady. 
+
+[15:00:00] [5402] [MANUAL_LOG]
+I wrote a Python script that connects to the PLC to monitor the humidity in real-time. I'm running it from my laptop.
+
+[15:05:00] [4786] [MANUAL_LOG]
+5402 DISCONNECT YOUR LAPTOP FROM THE MACHINE IMMEDIATELY.
+
+[15:06:00] [ALARM] [SYSTEM_KERNEL]
+UNAUTHORIZED ACCESS DETECTED. PORT 22 LOCKED. SYSTEM HALTED.
+
+[15:10:00] [1139] [TECH_LOG]
+5402 tripped the firewall on the PLC. It shut down the entire line as a security measure. I have to do a hard reset. 5402, you are literally banned from bringing your laptop onto the floor.
+
+[15:50:00] [4368] [MANUAL_LOG]
+Line is back up. We lost 40 minutes of production because of the intern. 
+
+[16:15:00] [4031] [MANUAL_LOG]
+Palletizer is full. Forklift driver is late. Boxes are backing up.
+
+[16:30:00] [8237] [LOGISTICS_LOG]
+Forklift is here. Clearing the end of Line 3. 
+
+[17:00:00] [8980] [MANUAL_LOG]
+The tarp fell off the window. The sun is setting so it's not blinding the camera, but we need that fixed by Monday. Also, who keeps humming that song from the Eurovision Song Contest? It's been 3 months since it was in Basel, let it go already. The SORTEX is loud enough without background vocals.
+
+[17:45:00] [1691] [MANUAL_LOG]
+Last roll of tape for the week loaded. 
+
+[18:45:00] [4467] [MAINTENANCE_TICKET]
+Doing preventive maintenance on Line 3 before the weekend. Cleaned the camera lenses, blew out the ejector manifold, checked the belt tension (480N, stable). Checked tape blade, it's clean.
+
+[19:30:00] [4786] [MANUAL_LOG]
+Hopper is empty. Processing complete for the week.
+
+[20:00:00] [4786] [SHIFT_HANDOVER]
+Shutting down the line for the weekend. Weekly yield average: 96.4%. Not bad considering the intern tried to send the machine into orbit, we spent a day hand-gluing boxes, and Sector 1 tried to sabotage our packaging.
+See you all on Monday. 
+
+[20:30:00] [9689] [CLEANING_LOG]
+Floor scrubbed. Bins emptied. Found a 12mm wrench under the hopper. Left it on the Shift Lead's desk.
+
+[23:59:00] [SYSTEM_KERNEL] WEEKLY LOG EXPORT INITIATED...
