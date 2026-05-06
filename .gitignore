@@ -1,7 +1,6 @@
 *.code-workspace
 
 # Data
-data/
 outputs/
 
 # Python
