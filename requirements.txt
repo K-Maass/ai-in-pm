@@ -2,6 +2,9 @@ numpy
 pandas
 matplotlib
 seaborn
+scikit-learn
+joblib
+tqdm
 nbformat
 openai
 xgboost
