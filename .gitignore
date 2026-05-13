@@ -3,7 +3,15 @@
 # Data
 outputs/*
 !outputs/exercise3_master_table_case_level.csv
+!outputs/exercise4_engineered_features.csv
 !outputs/exercise5_plc_predictions.csv
+!outputs/exercise5_plc_search_results.csv
+!outputs/exercise7_feature_importance.csv
+!outputs/exercise7_model_artifact.joblib
+!outputs/exercise7_model_comparison.csv
+!outputs/exercise9_drift_audit.csv
+!outputs/exercise9_good_case_drift_audit.csv
+!outputs/exercise9_heatwave_predictions.csv
 !outputs/logbook_events_structured.csv
 
 # Python

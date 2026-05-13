@@ -1,0 +1,19 @@
+feature,gain,business_context
+feature_33,46.90483093261719,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_5,43.64230728149414,Also part of the simple PLC rule; important for both simple and unrestricted models.
+feature_9,24.03223991394043,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_7,9.081707000732422,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_10,7.237676620483398,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_2,4.565577030181885,Also part of the simple PLC rule; important for both simple and unrestricted models.
+feature_31,3.976698398590088,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+Urs_Rhythm_Index,3.5770063400268555,Engineered operator-trust feature: recent process-signal instability.
+feature_4,3.3403027057647705,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_3,3.2013089656829834,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_11,3.009434223175049,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_32,2.745962619781494,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_27,2.7234883308410645,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+Urs_Rolling_Signal_Volatility,2.6922056674957275,Component of the engineered rhythm/volatility feature.
+Urs_Local_Signal_Change,2.6711935997009277,Component of the engineered rhythm/volatility feature.
+feature_1,2.661862373352051,Also part of the simple PLC rule; important for both simple and unrestricted models.
+feature_29,2.5759596824645996,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
+feature_30,2.3646671772003174,Raw SORTEX signal; monitor for drift because the physical meaning is undocumented.
